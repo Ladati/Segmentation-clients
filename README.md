@@ -1,7 +1,7 @@
 # Segmentation-clients
 
 Ce projet consiste à réaliser une segmentation des clients d’un centre commercial à partir du dataset Mall_Customers
-disponible sur Kaggle.[Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
+disponible sur [Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
 ---
 
@@ -13,41 +13,47 @@ Créer des groupes de profils clients et de les classer selon leurs caractérist
 ## Contenu du dépôt
 
 - `segmentation.ipynb` : le notebook Jupyter contenant toutes les étapes d’analyse (nettoyage, exploration, visualisations,segmentation, interprétations, conclusion).
-- `titanic3.xls` : fichier Excel utilisé pour l’analyse (ou `titanic.csv` si tu préfères).
-- `README.md` : ce fichier de présentation.
+- `segmentation.csv` : fichier csv utilisé pour l’analyse et la segmentation
+- `README.md` : fichier de présentation.
 
 ---
 
-## 📊 Méthodologie
+## Méthodologie
 
 L’étude comprend :
-- Un nettoyage des données (valeurs manquantes, doublons, outliers)
-- Des visualisations : âge, tarif, classe, genre, port d’embarquement, etc.
-- Une comparaison des survivants vs non survivants
+- **Analyses exploratoires** des données pour mieux comprendre les caractéristiques des clients
+- **visualisations** des variables clés (âge, revenu, score client, genre, etc.).
+- **Analyse en Composante Principales (ACP)** linéaire et non linéaire afin de réduire la simensionnalité et mieux visualiser les relations entre variables.
+- **Segmentation des clients** à l'aide d'algorithmes de classification (notamment k-Means), avec une **interprétation des groupes obtenus** 
 
 ---
 
-## ✅ Résultats clés
+## Résultats clés
 
-- Les femmes et les enfants avaient un taux de survie plus élevé
-- Les passagers de 1ère classe ont survécu plus fréquemment
-- Les tarifs élevés sont associés à un meilleur taux de survie
+- **Répartition par genre** : la majorité des clients sont des femmes.
+- **Profil d’âge et de revenu** : le centre attire principalement de jeunes adultes avec un âge situé autour de la trentaine dont la plupart ont un revenu modeste.
+- Segmentation clients : Trois catégories distincts :
+    * Clients occasionnels : d'âge plus avancé, avec un revenu moyen
+    * Clients moyennement fidèles : très jeunes disposant d'un revenu faible
+    * Clients premium : jeunes adultes, à un revenu élevé et très engagés
 
 ---
 
 ## Remarques
 
-Ce projet est **purement descriptif** et constitue mon premier projet personnel dans le domaine de la data science.
+Ce projet est principalement descriptif et inclut une approche de classification.
+Il s’agit de mon deuxième projet personnel dans le domaine de la data science.
 
-Je suis ouverte à toutes suggestions et critiques constructives pour m'améliorer ! 🙏
+Je reste ouverte à toutes suggestions et critiques constructives pour continuer à progresser.
 
 ---
 
 ## À propos de moi
 
-Étudiante en Master 2 de Statistique, passionnée par l’analyse de données et en pleine reconversion vers la **data science**.  
-Ce projet fait partie de mon **portfolio personnel**.
+Étudiante en Master 2 de Statistique Économétrique, passionnée par l’analyse de données et en pleine évolution vers le métier de data scientist.
+
+Ce projet fait partie de mon portfolio personnel que je construis au fil de mon apprentissage.
 
 ---
 
-## 🧠 Prochain projet en cours : `Segmentation de clients`
+## Prochain projet en cours : `Exploration du machine learning appliqué au domaine agro-alimentaire.`
